@@ -1,0 +1,20 @@
+{% extends "myweb/base.html" %}
+{% block title %}เกี่ยวกับ{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow border-0">
+      <div class="card-body">
+        <h2 class="mb-3">เกี่ยวกับฉัน</h2>
+        <ul class="list-group list-group-flush mb-3">
+          <li class="list-group-item">ชื่อ: ธีรภัทร อินทโร</li>
+          <li class="list-group-item">ชื่อเล่น: ธีเมอร์</li>
+          <li class="list-group-item">ความสนใจ: Coding, IT, Game, Design</li>
+          <li class="list-group-item">ติดต่อ: thxrmor2@gmail.com</li>
+        </ul>
+        <a href="{% url 'home' %}" class="btn btn-secondary">กลับหน้าหลัก</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

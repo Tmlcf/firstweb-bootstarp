@@ -1,0 +1,32 @@
+{% extends "myweb/base.html" %}
+{% block title %}วนซ้ำข้อมูล{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow border-0 mb-4">
+      <div class="card-body">
+        <h2 class="mb-4">ป้อนตัวเลขที่ต้องการวนซ้ำ</h2>
+        <form method="post" class="mb-4">
+          {% csrf_token %}
+          <div class="mb-3">
+            <input type="number" class="form-control" name="table" placeholder="กรอกแม่สูตรคูณ (2-12)" min="2" max="12" required>
+          </div>
+          <button type="submit" class="btn btn-primary">แสดงสูตรคูณ</button>
+        </form>
+        {% if table and results %}
+        <h5 class="mt-4">สูตรคูณแม่ {{ table }}</h5>
+        <table class="table table-bordered table-striped mt-2">
+          <thead><tr><th>ลำดับ</th><th>สูตร</th><th>ผลลัพธ์</th></tr></thead>
+          <tbody>
+            {% for row in results %}
+            <tr><td>{{ forloop.counter }}</td><td>{{ row.formula }}</td><td>{{ row.result }}</td></tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        {% endif %}
+        <a href="{% url 'home' %}" class="btn btn-secondary mt-4">กลับหน้าหลัก</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

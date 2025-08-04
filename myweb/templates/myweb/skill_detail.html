@@ -1,0 +1,15 @@
+{% extends "myweb/base.html" %}
+{% block title %}รายละเอียดทักษะ{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow border-0">
+      <div class="card-body text-center">
+        <h2 class="mb-3">{{ skill.name }}</h2>
+        <p>ระดับ: <span class="badge bg-{{ skill.level_class }}">{{ skill.level }}</span></p>
+        <a href="{% url 'skills' %}" class="btn btn-primary mt-3">กลับหน้าทักษะ</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

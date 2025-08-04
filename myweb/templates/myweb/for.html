@@ -1,0 +1,56 @@
+{% extends "myweb/base.html" %}
+{% block title %}หน้าแรก - TMLCF{% endblock %}
+{% block content %}
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Teerapad Intaro <span class="badge bg-secondary">TeeMer</span></h1>
+    <div class="row justify-content-center">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <img src="https://sdmntprwestus2.oaiusercontent.com/files/00000000-5128-61f8-852a-220b8d257cf6/raw?se=2025-07-21T08%3A12%3A55Z&sp=r&sv=2024-08-04&sr=b&scid=3dc6e9c6-b52e-5def-92bb-580d3f9c2429&skoid=71e8fa5c-90a9-4c17-827b-14c3005164d6&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-21T02%3A04%3A17Z&ske=2025-07-22T02%3A04%3A17Z&sks=b&skv=2024-08-04&sig=NZePWwiZvcklO8oPNjAtHPI5G60uwWW%2BK9NS41Jn2VU%3D" class="card-img-top" alt="Teerapad Intaro">
+                <div class="card-body">
+                    <h5 class="card-title">Teerapad Intaro</h5>
+                    <p class="card-text">นักเรียน/นักศึกษา สนใจด้าน IT, Programming และ Game Development<br>ชื่อเล่น: <span class="badge bg-info text-dark">TeeMer</span></p>
+                    <div class="d-flex gap-2 mb-2">
+                        <a href="https://www.facebook.com/" class="btn btn-outline-primary btn-sm" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/" class="btn btn-outline-danger btn-sm" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="mailto:thxrmor2@gmail.com" class="btn btn-outline-success btn-sm"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">เกี่ยวกับฉัน</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">ชื่อ: ธีรภัทร อินทโร</li>
+                        <li class="list-group-item">ชื่อเล่น: ธีเมอร์</li>
+                        <li class="list-group-item">ความสนใจ: Coding, IT, Game, Design</li>
+                        <li class="list-group-item">ติดต่อ: thxrmor2@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Section: Skills -->
+            <div class="card shadow mb-4" id="skills">
+                <div class="card-body">
+                    <h5 class="card-title">ทักษะ</h5>
+                    <div class="mb-2">HTML <span class="badge bg-success">ดี</span></div>
+                    <div class="mb-2">CSS <span class="badge bg-success">ดี</span></div>
+                    <div class="mb-2">JavaScript <span class="badge bg-warning text-dark">พอใช้</span></div>
+                    <div class="mb-2">Python <span class="badge bg-info text-dark">กำลังเรียนรู้</span></div>
+                    <div class="mb-2">Game Design <span class="badge bg-primary">พอใช้</span></div>
+                </div>
+            </div>
+            <!-- Section: Contact -->
+            <div class="card shadow" id="contact">
+                <div class="card-body">
+                    <h5 class="card-title">ช่องทางติดต่อ</h5>
+                    <p><i class="bi bi-envelope"></i> thxrmor2@gmail.com</p>
+                    <p><i class="bi bi-facebook"></i> <a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+                    <p><i class="bi bi-instagram"></i> <a href="https://www.instagram.com/" target="_blank">Instagram</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
